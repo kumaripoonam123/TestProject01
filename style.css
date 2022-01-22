@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+
+    
+
+.content{
+    background-image: url("https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_960_720.jpg");
+    width: 100%;
+    position: absolute;
+    background-color: lightgreen;
+    height: 100%;
+    
+
+
+}
+
+
+.left-col{
+margin-left: 6%;
+
+}
+
+.left-col h1{
+    font-size: 90px;
+    color: green;
+    line-height: 110px;
+    float: left;
+  }
+
+.right-col{
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: centre;
+}
+
+.right-col p{
+    font-size:50px;
+    color: blue;
+    font-weight:400;
+    margin-right:5px;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 100%;
+    padding:0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

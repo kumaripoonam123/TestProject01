@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>My Music</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="left-col">
+            <h1>My Music</h1>
+
+            <gif id="gif">
+                <source src="https://thumbs.gfycat.com/CorruptBoilingGoldfish-mobile.mp4" alt="">
+        </div>
+        </gif>
+
+        <div class="right-col">
+            <p>Click here to play the song</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6b0pi232WmbWrlinoTv64T4ywJZXk9h2u7xw3QCgPV0N6efewb33Q6BvSp5b3B5aOYs&usqp=CAU"
+                id="icon">
+        </div>
+
+    </div>
+    <audio id="mySong">
+        <source src="https://pagalnew.com/mp3-songs/bollywood-mp3-songs/title-track-shiddat-128-kbps-sound.mp3"
+            type="audio/mp3">
+
+    </audio>
+
+
+    <script>
+        var gif = document.getElementById('gif');
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            if (mySong.paused) {
+                mySong.play();
+                icon.src = "https://www.pngkey.com/png/detail/236-2364366_small-red-pause-button-png.png"
+                gif.opacity = 1;
+            }
+            else {
+                mySong.pause()
+                icon.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6b0pi232WmbWrlinoTv64T4ywJZXk9h2u7xw3QCgPV0N6efewb33Q6BvSp5b3B5aOYs&usqp=CAU"
+                gif.opacity = 0;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
